@@ -1,0 +1,17 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+$gendark: #2d2d2d;
+$genlight: #dedede;
+
+$master-colors: (
+    "gendark": $gendark,
+    "genlight": $genlight
+);
+
+
+$theme-colors:map-merge($master-colors, $theme-colors);
+//Importar librerias fuente de Bootstrap
+//Comenzar a realizar modificaciones
+@import '../node_modules/bootstrap/scss/bootstrap.scss'

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>CicloVentura | E-Power Pro</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" type="images/x-icon" href="./img/logo.png" />
+</head>
+<body class="text-bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top bg-gendark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./img/logo2.png" alt="" style="width: 100px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-underline" id="navSpyIa">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#producto">Producto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#tiendas">Tiendas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#Experiencias">Experiencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#Especificaciones"">Especificaciones</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <a class="btn btn-outline-genlight" href="./form.html" role="button">Contacto</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+    <main class="container separacion border rounded">
+      <div>
+        
+      </div>
+        <!--LAYOUT 2 COLUMNAS-->
+        <div class="row">
+            <div class="col text-bg-light mb-3">
+                <p class="fs-3 mt-3">Solicitud de información</p>
+                <!--INICIO FORMULARIO-->
+                <form class="needs-validation" novalidate="">
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                          Porfavor, añade tu nombre.
+                        </div>
+                      </div>
+          
+                      <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                          Porfavor, añade tus apellidos.
+                        </div>
+                      </div>
+
+                      <div class="col-6">
+                        <label for="address" class="form-label">País</label>
+                        <input type="text" class="form-control" id="address" placeholder="Ejemplo: España" required="">
+                        <div class="invalid-feedback">
+                          Porfavor, escoge el país.
+                        </div>
+                      </div>
+
+                      <div class="col-6">
+                        <label for="address" class="form-label">Ciudad</label>
+                        <input type="text" class="form-control" id="address" placeholder="Ejemplo: Barcelona" required="">
+                        <div class="invalid-feedback">
+                          Porfavor, añade tu ciudad.
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="address" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="address" placeholder="your@email.com" required="">
+                        <div class="invalid-feedback">
+                          Porfavor, añade tu email.
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <label for="state" class="form-label">Modelo</label>
+                        <select class="form-select" id="state" required="">
+                          <option value="">Modelo a escoger...</option>
+                          <option>E-Power</option>
+                          <option>E-Power Pro</option>
+                          <option>Urbana Pro (Proximamente)</option>
+                          <option>E-Trail (Proximamente)</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Porfavor, escoge tu modelo.
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Empresa
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Particular
+                            </label>
+                          </div>
+                      </div>
+
+                      <div class="input-group mb-3">
+                        <span class="input-group-text">Explícate</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+          
+                    </div>
+          
+                    <button class="w-100 btn btn-gendark btn-lg mb-3 mt-5" type="submit">Enviar solicitud</button>
+                  </form>
+                <!--FIN FORMULARIO-->
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+    <script src="./js/form.js"></script>
+</body>
+</html>
